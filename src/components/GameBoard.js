@@ -30,8 +30,10 @@ const GameBoard = () => {
             
             if(checkWinOrDraw()){
                 alert(currentPlayer+" is a winner 🎉 🎊");
+                window.location.reload();
             }else if(count===9){
                 alert("Match Draw Guys ❗")
+                window.location.reload();
             }
         }
         

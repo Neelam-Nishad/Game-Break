@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
 
 
+/***********************************************************************************************************************/
+/* Main body and tic-tac-toe mixed  */
 .heading{
     font-family: 'Train One', cursive;
     padding: 20px;
@@ -17,31 +19,27 @@
     height: 80vh;
     border-radius: 5%;
   }
-  
-  
   .square{
     height: 33.3%;
     width: 33.3%;
   }
-  
   .bt{
     border-top: solid rgb(169, 143, 194) 5px;
   }
-  
   .bb{
     border-bottom: solid rgb(169, 143, 194) 5px;
   }
-  
   .bsb{
     border-left: solid rgb(169, 143, 194) 5px;
     border-right:  solid rgb(169, 143, 194) 5px;
   }
-  
   .x10{
     font-size: 5rem;
     color: rgb(75, 60, 95);
   }
 
+/***************************************************************************************************************************************/
+/* Home page*/
   .thumbnail {
     display: inline-block;
     height: 250px;
@@ -61,6 +59,14 @@
       border: brown 1px solid;
       box-shadow: rgb(224, 216, 216) 10px 10px 0px 0px;
   }
+
+
+
+
+  /********************************************************************************************************************************************/
+/*  for Rock-paper-scissors*/
+
+
 
  .images{
    height: 200px;
@@ -100,3 +106,57 @@
   border: 2px solid rgb(207, 171, 171);
   box-shadow: coral;
 }
+
+
+
+/******************************************************************************************************************************************/
+
+.minesweeperStartButton{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.mineSweepercell{
+  border: 1px solid rgb(158, 158, 116);
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  box-shadow: whitesmoke 2px 2px 0px 0px;
+  border-radius: 5%;
+  
+}
+.mineSweeperBoard{
+  height: 450px;
+  width: 450px;
+}
+.minesweepercentering{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.mineSweeperCellButton{
+  border: none;
+  background-color: rgb(151, 128, 98);
+  height: 100%;
+  width: 100%;
+  padding-top: 10px;
+  color: rgb(151, 128, 98);
+  font-size: larger;
+  font-weight: 700;
+}
+.changedmineSweeperCellButton{
+  border: none;
+  height: 100%;
+  width: 100%;
+  padding-top: 10px;
+  color: rgb(151, 128, 98);
+  font-size: larger;
+  font-weight: 700;
+  background-color: antiquewhite;
+}
+.mineSweeperScore{
+  margin-left: 100px;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+/*******************************************************************************************************************************************/

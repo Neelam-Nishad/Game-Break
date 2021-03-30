@@ -5,9 +5,10 @@ import Card from './rockPaperScissor/Card';
 const RockPaperScissor = () => {
   const wepon = ['Rock 🤘', 'Paper 📃', 'Scissors ✂'];
   const [score, setScore] = useState(0);
-  const [winner, setWinner] = useState("");
+  
   const [user, setUser] = useState(wepon[0]);
   const [system, setSystem] = useState(wepon[0]);
+  const [winner, setWinner] = useState("Tie!!");
 
   const getRandom = () => {
     let num = Math.floor(Math.random()*3);
@@ -24,16 +25,17 @@ const RockPaperScissor = () => {
     console.log(system);
     
     if((user===wepon[0] && system===wepon[2]) || (user===wepon[1] && system===wepon[0]) || (user===wepon[2] && system===wepon[1]) ){
-      setWinner("You win!!");
+      setWinner("You won last round!!  +1");
       setScore(score+1);
     }
     if(user===system){
-      setWinner("Tie!!");
+      setWinner("Tied!!  +0");
     }
     if(user===wepon[2] && system===wepon[0] || user===wepon[0] && system===wepon[1] || user===wepon[1] && system===wepon[2]){
-      setWinner("You loose!!");
+      setWinner("You lost last round!!  -1");
       setScore(score-1);
     }
+    console.log(winner);
   }
 
     return (
